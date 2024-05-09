@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>5 Day Weather Forecast</title>
+    <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-    
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+        <div>
+            <label for="city-weather-search">Search for a city:</label>
+            <input type="search" id="city-search" name="search" placeholder="Los Angeles"/>
+            <button id="fetch-button">Search</button>
+        </div>
+        <div id="search-history"></div>
+        <div id="city-data"></div>
+        <div id="5-day-forecast"></div>
+    </main>
+    <footer></footer>
+    <script src="assets/script.js"></script>
 </body>
 </html>
