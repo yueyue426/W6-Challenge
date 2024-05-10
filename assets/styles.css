@@ -1,0 +1,112 @@
+/* General reset for the body, and basic styling for text and background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #eef1f7;
+    color: #333;
+}
+
+/* Header styling with a consistent color scheme and padding */
+header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Main section layout using flex to split into two columns */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Container for search and history, aligned vertically */
+.search-history-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles for search container */
+.search-container {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for search input and button */
+input[type="search"], button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #007bff;
+}
+
+/* Search history styling */
+#search-history {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* overflow-y: auto; */
+    max-height: 250px;
+}
+
+.display-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Weather display containers on the right */
+.display-current-weather, .display-forecast-weather {
+    width: 90%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-history-container, .display-current-weather, .display-forecast-weather {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    width: 100%;
+    margin-top: 20px;
+}
