@@ -18,16 +18,21 @@ header {
 /* Main section layout using flex to split into two columns */
 main {
     display: flex;
+    width: 100%;
+    height: 00px;
     justify-content: space-between;
     padding: 20px;
 }
 
 /* Container for search and history, aligned vertically */
 .search-history-container {
-    width: 30%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 3%;
+    margin-top: 10px;
+
 }
 
 /* Styles for search container */
@@ -41,7 +46,8 @@ main {
 }
 
 /* Styles for search input and button */
-input[type="search"], button {
+input[type="search"],
+button {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
@@ -58,34 +64,56 @@ button {
 }
 
 button:hover {
-    background-color: #007bff;
+    background-color: #4f94dd;
+    transform: scale(1.05);
 }
 
 /* Search history styling */
 #search-history {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
+
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     /* overflow-y: auto; */
     max-height: 250px;
+
+    button {
+        width: 80%;
+        margin-inline: 5%;
+    }
 }
 
 .display-container {
-    width: 60%;
+    width: 69%;
     display: flex;
     flex-direction: column;
-}
 
-/* Weather display containers on the right */
-.display-current-weather, .display-forecast-weather {
-    width: 90%;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+
+    /* Weather display containers on the right */
+    .display-current-weather {
+        width: 90%;
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+    }
+
+    .display-forecast-weather {
+
+        div {
+            display: inline-block;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            padding: 2%;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            margin: 1.2%;
+
+        }
+    }
 }
 
 /* Responsive adjustments for smaller screens */
@@ -95,7 +123,9 @@ button:hover {
         align-items: center;
     }
 
-    .search-history-container, .display-current-weather, .display-forecast-weather {
+    .search-history-container,
+    .display-current-weather,
+    .display-forecast-weather {
         width: 100%;
         margin-left: 0;
         margin-bottom: 20px;
@@ -108,5 +138,5 @@ footer {
     padding: 10px;
     background-color: #f8f9fa;
     width: 100%;
-    margin-top: 20px;
+  margin-top: 720px;
 }
