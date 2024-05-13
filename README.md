@@ -43,3 +43,8 @@ Contributions to this project are welcome. Please fork the repository and submit
 
 This project is licensed under the [MIT License](https://chatgpt.com/c/LICENSE.md).
 
+## Mock-Up
+![alt text](assets/image.png)
+
+## Link
+https://github.com/yueyue426/W6-Challenge.git
