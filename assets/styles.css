@@ -76,21 +76,19 @@ button:hover {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    /* overflow-y: auto; */
     max-height: 250px;
 
     button {
         width: 80%;
         margin-inline: 5%;
     }
+    display: none;
 }
 
 .display-container {
     width: 69%;
     display: flex;
     flex-direction: column;
-
-
     /* Weather display containers on the right */
     .display-current-weather {
         width: 90%;
@@ -99,10 +97,10 @@ button:hover {
         border-radius: 8px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         margin: 10px;
+        display: none;
     }
-
+    
     .display-forecast-weather {
-
         div {
             display: inline-block;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -138,5 +136,5 @@ footer {
     padding: 10px;
     background-color: #f8f9fa;
     width: 100%;
-  margin-top: 720px;
+    margin-top: 720px;
 }

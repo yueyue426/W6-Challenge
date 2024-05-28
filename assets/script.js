@@ -142,6 +142,7 @@ window.onload = function() {
 fetchButton.addEventListener('click', (event) => {
     //Prevent default action
     event.preventDefault();
-
+    currentWeather.style.display = "inline";
+    searchHistory.style.display = "block";
     getCoordinate();
 });
