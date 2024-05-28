@@ -47,4 +47,4 @@ This project is licensed under the [MIT License](https://chatgpt.com/c/LICENSE.m
 ![alt text](assets/image.png)
 
 ## Link
-https://github.com/yueyue426/W6-Challenge.git
+https://yueyue426.github.io/W6-Challenge/
